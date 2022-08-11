@@ -1,0 +1,10 @@
+nl=float(input())
+aj=float(input())
+xb=input()
+if xb=='male':
+    a=(220-nl-aj)*0.8+aj
+    i=(220-nl-aj)*0.6+aj
+else:
+    a=(210-nl-aj)*0.8+aj
+    i=(210-nl-aj)*0.6+aj
+print(str(i)+'~'+str(a))

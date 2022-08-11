@@ -1,0 +1,7 @@
+s=25
+t=int(input())
+v=s*3600/t
+if v<=100:
+    print('Õı³£')
+else:
+    print('³¬ËÙ')

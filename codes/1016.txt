@@ -1,0 +1,4 @@
+h=float(input())
+w=float(input())
+b=w/h**2
+print(b)

@@ -1,0 +1,14 @@
+a=[6,2,5,5,4,5,6,3,7,6]
+for i in range(112):
+    p=str(i)
+    if len(p)==1:
+        if a[i]==6:
+            print(i)
+    elif len(p)==2:
+        x,y=map(int,p)
+        if a[x]+a[y]==6:
+            print(i)
+    else:
+        x,y,z=map(int,p)
+        if a[x]+a[y]+a[z]==6:
+            print(i)

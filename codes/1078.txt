@@ -1,0 +1,13 @@
+n,m=map(int,input().split())
+list1 = list(range(1,n+1))
+count = 0
+xulie = []
+while len(list1)!= 0:
+    count +=1
+    if count!=m:
+        list1.append(list1.pop(0))
+    else:
+        xulie.append(list1.pop(0))
+        count = 0
+for i in xulie:
+    print(i,end=" ")

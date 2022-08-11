@@ -1,0 +1,4 @@
+p=input().split()
+x,a,y,b=map(int,p)
+n=(x*a-y*b)/(a-b)
+print('%.2f'%(n))

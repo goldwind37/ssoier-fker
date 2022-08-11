@@ -1,0 +1,8 @@
+s=0
+a=20
+z=0
+while s<500:
+    s+=a
+    a+=5
+    z+=1
+print(z)

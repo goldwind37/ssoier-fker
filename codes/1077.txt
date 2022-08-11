@@ -1,0 +1,10 @@
+n=int(input())
+t=True
+print(2,end=' ')
+for i in range(3,n+1):
+    for j in range(2,i):
+        if i%j==0:
+            t=False
+    if t==True:
+        print(i,end=' ')
+    t=True

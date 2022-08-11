@@ -1,0 +1,5 @@
+for v in range(21):
+    for m in range(34):
+        c=100-v-m
+        if 5*v+3*m+c/3==100:
+             print(v,m,c)

@@ -1,0 +1,7 @@
+yw=input()
+td=input().split()
+for i in range(len(yw)):
+    if yw[i]==td[0]:
+        print(td[1],end='')
+    else:
+        print(yw[i],end='')

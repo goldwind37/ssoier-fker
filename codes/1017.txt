@@ -1,0 +1,6 @@
+r=float(input())
+pi=3.14159
+zj=2*r
+zc=2*r*pi
+mj=pi*r**2
+print('%.4f'%(zj),'%.4f'%(zc),'%.4f'%(mj))

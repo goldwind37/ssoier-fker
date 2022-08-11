@@ -1,0 +1,4 @@
+n=int(input())
+s=1992**n
+p=s%100
+print(p)

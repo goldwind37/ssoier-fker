@@ -1,0 +1,6 @@
+def jc(n):
+    s=1
+    for i in range(1,n+1):
+        s=s*i
+    return(s)
+print(jc(7)+jc(11)-jc(10))

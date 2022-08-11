@@ -1,0 +1,18 @@
+p=input()
+zm=0
+kg=0
+sz=0
+qt=0
+for i in range(len(p)):
+    if 'a'<=p[i]<='z' or 'A'<=p[i]<='Z':
+        zm+=1
+    elif p[i]==' ':
+        kg+=1
+    elif '0'<=p[i]<='9':
+        sz+=1
+    else:
+        qt+=1
+print(zm)
+print(kg)
+print(sz)
+print(qt)

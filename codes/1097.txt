@@ -1,0 +1,16 @@
+a1=input()
+a2=input()
+def h(s):
+    x=''
+    for i in range(len(s)):
+        b=''
+        if s[i]!=' ':
+            b=s[i]
+        if 'a'<=s[i]<='z':
+            b=chr(ord(s[i])-32)
+        x=x+b
+    return(x)
+if h(a1)==h(a2):
+    print('YES')
+else:
+    print('NO')

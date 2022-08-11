@@ -1,0 +1,7 @@
+c=input()
+c=c.split()
+a,b=map(int,c)
+r=(b-2*a)//2
+c=2*a-b//2
+print(c,end=' ')
+print(r)

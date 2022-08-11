@@ -1,0 +1,10 @@
+n=int(input())
+if n<=5:
+    a=2
+elif 5<n<=10:
+    a=3
+elif 10<n<=16:
+    a=4
+elif 16<n:
+    a=5
+print('Æ±¼Û'+str(a)+'Ôª')

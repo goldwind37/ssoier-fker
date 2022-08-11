@@ -1,0 +1,5 @@
+x=int(input())
+y=int(input())
+a=(220-x-y)*0.6+y
+b=(220-x-y)*0.8+y
+print(str(a)+"~"+str(b))

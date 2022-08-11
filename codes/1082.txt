@@ -1,0 +1,9 @@
+def A(z,x,c):
+    p=(z+x+c)/2
+    s=(p*(p-z)*(p-x)*(p-c))**0.5
+    return(s)
+p=input()
+p=p.split()
+a,b,d,e,c=map(float,p)
+s=A(a,b,c)+A(c,d,e)
+print('%.2f'%(s))

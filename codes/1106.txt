@@ -1,0 +1,13 @@
+s=input()
+x=''
+def jm(a):
+    if 'a'<=a<='y'or'A'<=a<='Y':
+        a=chr(ord(a)+1)
+    elif a=='z':
+        a='a'
+    elif a=='Z':
+        a='A'
+    return(a)
+for i in range(len(s)):
+    x=x+jm(s[i])
+print(x)

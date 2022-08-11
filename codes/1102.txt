@@ -1,0 +1,12 @@
+n=int(input())
+def w(a,b):
+    if a==b:
+        return('Tie')
+    elif(a=='Rock'and b=='Scissors')or(a=='Scissors' and b=='Paper')or(a=='Paper' and b=='Rock'):
+        return('Player1')
+    elif(b=='Rock'and a=='Scissors')or(b=='Scissors' and a=='Paper')or(b=='Paper' and a=='Rock'):
+        return('Player2')
+for i in range(n):
+    p=input().split()
+    s1,s2=map(str,p)
+    print(w(s1,s2))

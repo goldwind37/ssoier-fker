@@ -1,0 +1,8 @@
+a1=input()
+a2=input()
+if a1 in a2:
+    print(a1,'is substring of',a2)
+elif a2 in a1:
+    print(a2,'is substring of',a1)
+else:
+    print('No substring')

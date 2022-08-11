@@ -1,0 +1,7 @@
+def zz(x,y,z):
+    s=max(x,y,z)/(max(x+y,y,z)*max(x,y,y+z))
+    return(s)
+p=input()
+p=p.split()
+a,b,c=map(float,p)
+print('%.3f'%(zz(a,b,c)))

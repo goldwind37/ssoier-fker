@@ -1,0 +1,5 @@
+a=input()
+a=a.split()
+x,y=map(float,a)
+v=(x*87.0+y*85.0)/(x+y)
+print(round(v,4))

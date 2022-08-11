@@ -1,0 +1,12 @@
+s=input()
+z='qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890_'
+t=True
+if '0'<=s[0]<='9':
+    t=False
+for i in range(len(s)):
+    if s[i]not in z:
+        t=False
+if t==False:
+    print('no')
+else:
+    print('yes')

@@ -1,0 +1,10 @@
+def huan(f):
+    c=5*(f-32)/9
+    return(round(c,2))
+l=int(input())
+h=int(input())
+if l>=h:
+    print('输入的下限应该小于上限')
+else:
+    for i in range(l,h):
+        print('%8.d%10.2f'%(i,huan(i)))

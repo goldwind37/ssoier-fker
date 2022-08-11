@@ -1,0 +1,7 @@
+p=input().split()
+for i in range(0,len(p)):
+    p[i]=int(p[i])//3
+    p[i-1]=p[i]+int(p[i-1])
+    p[(i+1)%5]=p[i]+int(p[(i+1)%5])
+a,b,c,d,e=map(int,p)
+print('%5.d%5.d%5.d%5.d%5.d'%(a,b,c,d,e))

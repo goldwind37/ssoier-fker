@@ -1,0 +1,11 @@
+n=int(input())
+r=False
+while not r:
+    g=int(input())
+    if g==n:
+        print('正确')
+        r=True
+    elif g<n:
+        print('偏小')
+    else:
+        print('偏大')

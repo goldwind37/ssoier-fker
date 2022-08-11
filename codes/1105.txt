@@ -1,0 +1,14 @@
+s=input()
+x=''
+def DNA(a):
+    if a=='A':
+        return('T')
+    elif a=='T':
+        return('A')
+    elif a=='C':
+        return('G')
+    elif a=='G':
+        return('C')
+for i in range(len(s)):
+    x=x+DNA(s[i])
+print(x)

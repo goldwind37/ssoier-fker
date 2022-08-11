@@ -1,0 +1,5 @@
+n=float(input())
+a=[3.25,3,3,2,1.75]
+for i in range(5):
+    n=n+n*a[i]/100
+print(round(n,2))

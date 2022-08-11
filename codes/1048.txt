@@ -1,0 +1,6 @@
+s=''
+a=str(input())
+for i in range(len(a)):
+    s=a[i]+s
+s=int(s)
+print(s)

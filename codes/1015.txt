@@ -1,0 +1,4 @@
+a=input()
+z,x,c=a
+s=c+x+z
+print(int(s))

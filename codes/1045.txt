@@ -1,0 +1,8 @@
+x=list(map(int,input().split()))
+a=max(x)
+b=min(x)
+c=sum(x)
+d=c/len(x)
+print(b,end=' ')
+print(a,end=' ')
+print('%.3f'%d)

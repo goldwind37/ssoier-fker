@@ -1,0 +1,9 @@
+s=input()
+fl=1
+for i in range(len(s)):
+    if s.count(s[i])==1:
+        print(s[i])
+        fl=0
+        break
+if fl==1:
+    print('no')

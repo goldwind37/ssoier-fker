@@ -1,0 +1,5 @@
+def huan(f):
+    c=5*(f-32)/9
+    return(round(c,2))
+for i in range(100,106):
+    print('%8.d%10.2f'%(i,huan(i)))

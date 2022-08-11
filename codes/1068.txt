@@ -1,0 +1,4 @@
+p=input()
+p=p.split()
+for i in range(1,len(p)+1):
+    print(p[-i],end=' ')

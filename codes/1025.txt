@@ -1,0 +1,9 @@
+s=int(input())
+p=float(input())
+if 6<=s<=10:
+    c=s*p*0.9
+elif 11<=s:
+    c=s*p*0.8
+else:
+    c=s*p
+print(round(c,1))

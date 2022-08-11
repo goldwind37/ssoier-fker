@@ -1,0 +1,7 @@
+s=input()
+n=len(s)
+x=''
+for i in range(n):
+    a=(i+1)%n
+    x=x+chr(ord(s[i])+ord(s[a]))
+print(x)

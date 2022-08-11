@@ -1,0 +1,570 @@
+<html>
+
+<head>
+    <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
+    <meta content="IE=7" http-equiv="X-UA-Compatible">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+
+<body topmargin="0" onload="sh_highlightDocument();">﻿<title>基础Python编程在线评测系统</title>
+    <link rel="stylesheet" href="bnuoj.css">
+    <link type="text/css" rel="stylesheet" href="sh_style.css">
+    <script type="text/javascript" src="js/sh_main2.js"></script>
+
+    <center>
+        <table class="webtop" width="98%">
+            <tbody>
+                <tr>
+                    <th width="55%"><img src="python1.png" border="0" name="banner"><br>
+                        <font size="2" color="#FFA07A">本网站由成都石室中学、福建长乐一中教师联合呈现。题库教师群:913613507,仅供教师加入</font>
+                    </th>
+                    <th width="25%" align="left"><a href="xxx999.php">
+                            <font size="6" color="blue">拍邮费</font>
+                            <font size="10" color="red">送书</font>
+                            <font size="6" color="blue">开始啦！</font>
+                        </a></th>
+                    <th width="15%">
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <th>majiayin06&nbsp;&nbsp;<a href="update_userinfo.php?name=majiayin06">修改资料</a>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><a href="mail_index.php">作业或邮件(0)</a></th>
+                                </tr>
+                                <tr>
+                                    <th><a href="logout.php">退出登录</a></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+        <table class="menu" width="98%">
+            <tbody>
+                <tr bgcolor="#c8d4f7">
+                    <th width="14%" class="menu"><a href="index.php" class="menu">首页 </a></th>
+                    <th width="14%" class="menu"><a href="ranklist.php" class="menu">排名 </a></th>
+                    <th width="14%" class="menu"><a href="status.php" class="menu">提交记录 </a></th>
+                    <th width="14%" class="menu"><a href="problem_list.php" class="menu">题目列表 </a></th>
+                    <th width="14%" class="menu"><a href="tch_index.php" class="menu">教师频道</a> </th>
+                    <th width="14%" class="menu"><a href="userinfo.php" class="menu">我的信息</a> </th>
+                    <th width="14%" class="menu"><a href="about.php" class="menu">关于 </a></th>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <center>
+            <form action="status.php" method="get">
+                <table class="status">
+                    <tbody>
+                        <tr>
+                            <td class="status"><strong>查找:</strong></td>
+                            <td class="status">用户名</td>
+                            <td class="status"><input type="text" style="width:100px;height:24px;font:14px"
+                                    name="showname" value="linzhiyi01"></td>
+                            <td class="status">题号：</td>
+                            <td class="status"><input type="text" style="width:100px;height:24px;font:14px"
+                                    name="showpid" value=""></td>
+                            <td class="status">运行结果：</td>
+                            <td class="status">
+                                <select size="1" name="showres" style="font:14px" accesskey="l">
+                                    <option value="" selected="">All</option>
+                                    <option value="Accepted">完全正确</option>
+                                    <option value="Unaccepted">不完全正确</option>
+                                </select>
+                            </td>
+                            <td class="status"><input type="submit" size="10" value="Show"></td>
+                            <td width="180px" align="right" class="status" onclick="setCookie('status_pp',1)">团队提交信息
+                                <font color="red"><b>【开】</b></font>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form><a href="status.php?start=0&amp;showname=linzhiyi01&amp;showpid=&amp;showres=">
+                <strong>&lt;&lt;上一页</strong> </a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+                href="status.php?start=40&amp;showname=linzhiyi01&amp;showpid=&amp;showres="><strong>下一页&gt;&gt;</strong>
+            </a>
+            <script>
+                function setCookie(name, value) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (60 * 60 * 1000));
+                    var expires = "; expires=" + date.toGMTString();
+                    document.cookie = name + "=" + value + expires + "; path=/";
+                    location.reload();
+                }
+                if (window.screen.width >= 1200) t9 = "1200px"; else t9 = "98%";
+                document.write("<center><table width=" + t9 + "><tr bgcolor='#ccccff'><th width=12%>用户名</th><th width=8%>运行编号</th><th width=8%>题目号</th><th width=25%>评测结果<font color=#ff8040 size=2>(以下信息点击展开)</font></th><th width=8%>语言</th><th width=8%>代码长度</th><th width=15%>提交时间</th></tr>");
+                var ee = "linzhiyi01`0499831`1092`Unaccepted|0:RE|11868_0,`5`26`2022-08-07 08:59:22#linzhiyi01`0499824`1092`Unaccepted|0:RE|11872_0,`5`23`2022-08-07 08:56:38#linzhiyi01`0499823`1091`Accepted|100:AC|4196_33,AC|4192_32,AC|4192_30,AC|4196_30,AC|4188_31,AC|4184_33,AC|4184_32,AC|4188_31,AC|4188_31,AC|4196_30,`5`189`2022-08-07 08:55:56#linzhiyi01`0499817`1090`Accepted|40:AC|4180_30,AC|4172_29,AC|4180_29,AC|4180_28,`5`146`2022-08-07 08:53:07#linzhiyi01`0499816`1089`Accepted|100:AC|4188_33,AC|4188_29,AC|4176_29,AC|4188_31,AC|4188_40,AC|4180_46,AC|4184_59,AC|4188_81,AC|4188_90,AC|4176_105,`5`210`2022-08-07 08:52:26#linzhiyi01`0499814`1088`Accepted|40:AC|4184_30,AC|4184_30,AC|4192_35,AC|4176_697,`5`228`2022-08-07 08:49:12#linzhiyi01`0499812`1087`Accepted|100:AC|4336_31,AC|4324_30,AC|4328_30,AC|4336_30,AC|4332_30,AC|4340_30,AC|4328_30,AC|4332_30,AC|4324_30,AC|4332_30,`5`175`2022-08-07 08:48:25#linzhiyi01`0499808`1086`Accepted|100:AC|4188_32,AC|4192_31,AC|4180_30,AC|4180_30,AC|4184_30,AC|4188_29,AC|4180_30,AC|4196_30,AC|4192_30,AC|4192_30,`5`176`2022-08-07 08:45:25#linzhiyi01`0499807`1085`Accepted|100:AC|4172_25,AC|4172_30,AC|4176_30,AC|4184_30,AC|4180_30,AC|4172_50,AC|4172_31,AC|4172_31,AC|4176_30,AC|4172_30,`5`146`2022-08-07 08:40:57#linzhiyi01`0499302`1084`Accepted|100:AC|4180_25,AC|4176_33,AC|4184_30,AC|4168_31,AC|4180_31,AC|4168_31,AC|4172_30,AC|4180_30,AC|4176_31,AC|4176_30,`5`179`2022-08-06 21:48:11#linzhiyi01`0499261`1083`Accepted|100:AC|4196_36,AC|4196_32,AC|4192_32,AC|4196_32,AC|4184_32,AC|4188_30,AC|4188_30,AC|4192_30,AC|4188_31,AC|4196_31,`5`184`2022-08-06 21:37:11#linzhiyi01`0499257`1082`Accepted|40:AC|4188_23,AC|4192_30,AC|4184_29,AC|4188_29,`5`167`2022-08-06 21:36:16#linzhiyi01`0499228`1081`Accepted|100:AC|4152_30,AC|4164_29,AC|4152_29,AC|4164_29,AC|4160_30,AC|4156_29,AC|4164_29,AC|4152_29,AC|4164_29,AC|4164_29,`5`66`2022-08-06 21:28:53#linzhiyi01`0499089`1080`Accepted|10:AC|4172_32,`5`105`2022-08-06 20:51:05#linzhiyi01`0499046`1079`Accepted|40:AC|4156_32,AC|4156_30,AC|4160_29,AC|4156_29,`5`64`2022-08-06 20:38:15#linzhiyi01`0499007`1078`Accepted|40:AC|4196_32,AC|4200_29,AC|4240_116,AC|4268_68,`5`276`2022-08-06 20:26:16#linzhiyi01`0498986`1077`Accepted|40:AC|4176_30,AC|4188_30,AC|4188_29,AC|4188_64,`5`186`2022-08-06 20:17:16#linzhiyi01`0498450`1076`Accepted|10:AC|4144_24,`5`29`2022-08-06 18:02:29#linzhiyi01`0498419`1075`Accepted|40:AC|4164_23,AC|4164_29,AC|4236_29,AC|4260_29,`5`79`2022-08-06 17:52:35#linzhiyi01`0498260`1074`Accepted|40:AC|4192_25,AC|4192_30,AC|4184_29,AC|4212_30,`5`165`2022-08-06 17:24:47#".split("#");
+                wzy_status();</script>
+            <center>
+                <table width="1200px">
+                    <tbody>
+                        <tr bgcolor="#ccccff">
+                            <th width="12%">用户名</th>
+                            <th width="8%">运行编号</th>
+                            <th width="8%">题目号</th>
+                            <th width="25%">评测结果<font color="#ff8040" size="2">(以下信息点击展开)</font>
+                            </th>
+                            <th width="8%">语言</th>
+                            <th width="8%">代码长度</th>
+                            <th width="15%">提交时间</th>
+                        </tr>
+                        <tr bgcolor="#FCFCFC" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499831</td>
+                            <td align="center"><a href="problem_show.php?pid=1092">1092</a></td>
+                            <td onclick="hide('499831')" align="center"><strong><span class="wa">
+                                        <font size="2">未通过 </font>
+                                    </span>
+                                    <font size="2">0分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499831" style="display:none"><strong>测试点1: <span class="re">运行错误</span>
+                                            11868KB 0MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">26 Bytes</td>
+                            <td align="center">2022-08-07 08:59:22</td>
+                        </tr>
+                        <tr bgcolor="#F0F0F0" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499824</td>
+                            <td align="center"><a href="problem_show.php?pid=1092">1092</a></td>
+                            <td onclick="hide('499824')" align="center"><strong><span class="wa">
+                                        <font size="2">未通过 </font>
+                                    </span>
+                                    <font size="2">0分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499824" style="display:none"><strong>测试点1: <span class="re">运行错误</span>
+                                            11872KB 0MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">23 Bytes</td>
+                            <td align="center">2022-08-07 08:56:38</td>
+                        </tr>
+                        <tr bgcolor="#FCFCFC" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499823</td>
+                            <td align="center"><a href="problem_show.php?pid=1091">1091</a></td>
+                            <td onclick="hide('499823')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499823" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4196KB 33MS <br>测试点2: <span class="ac">答案正确</span> 4192KB 32MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4192KB 30MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4196KB 30MS <br>测试点5: <span
+                                                class="ac">答案正确</span> 4188KB 31MS <br>测试点6: <span
+                                                class="ac">答案正确</span> 4184KB 33MS <br>测试点7: <span
+                                                class="ac">答案正确</span> 4184KB 32MS <br>测试点8: <span
+                                                class="ac">答案正确</span> 4188KB 31MS <br>测试点9: <span
+                                                class="ac">答案正确</span> 4188KB 31MS <br>测试点10: <span
+                                                class="ac">答案正确</span> 4196KB 30MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">189 Bytes</td>
+                            <td align="center">2022-08-07 08:55:56</td>
+                        </tr>
+                        <tr bgcolor="#F0F0F0" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499817</td>
+                            <td align="center"><a href="problem_show.php?pid=1090">1090</a></td>
+                            <td onclick="hide('499817')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499817" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4180KB 30MS <br>测试点2: <span class="ac">答案正确</span> 4172KB 29MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4180KB 29MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4180KB 28MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">146 Bytes</td>
+                            <td align="center">2022-08-07 08:53:07</td>
+                        </tr>
+                        <tr bgcolor="#FCFCFC" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499816</td>
+                            <td align="center"><a href="problem_show.php?pid=1089">1089</a></td>
+                            <td onclick="hide('499816')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499816" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4188KB 33MS <br>测试点2: <span class="ac">答案正确</span> 4188KB 29MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4176KB 29MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4188KB 31MS <br>测试点5: <span
+                                                class="ac">答案正确</span> 4188KB 40MS <br>测试点6: <span
+                                                class="ac">答案正确</span> 4180KB 46MS <br>测试点7: <span
+                                                class="ac">答案正确</span> 4184KB 59MS <br>测试点8: <span
+                                                class="ac">答案正确</span> 4188KB 81MS <br>测试点9: <span
+                                                class="ac">答案正确</span> 4188KB 90MS <br>测试点10: <span
+                                                class="ac">答案正确</span> 4176KB 105MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">210 Bytes</td>
+                            <td align="center">2022-08-07 08:52:26</td>
+                        </tr>
+                        <tr bgcolor="#F0F0F0" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499814</td>
+                            <td align="center"><a href="problem_show.php?pid=1088">1088</a></td>
+                            <td onclick="hide('499814')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499814" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4184KB 30MS <br>测试点2: <span class="ac">答案正确</span> 4184KB 30MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4192KB 35MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4176KB 697MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">228 Bytes</td>
+                            <td align="center">2022-08-07 08:49:12</td>
+                        </tr>
+                        <tr bgcolor="#FCFCFC" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499812</td>
+                            <td align="center"><a href="problem_show.php?pid=1087">1087</a></td>
+                            <td onclick="hide('499812')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499812" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4336KB 31MS <br>测试点2: <span class="ac">答案正确</span> 4324KB 30MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4328KB 30MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4336KB 30MS <br>测试点5: <span
+                                                class="ac">答案正确</span> 4332KB 30MS <br>测试点6: <span
+                                                class="ac">答案正确</span> 4340KB 30MS <br>测试点7: <span
+                                                class="ac">答案正确</span> 4328KB 30MS <br>测试点8: <span
+                                                class="ac">答案正确</span> 4332KB 30MS <br>测试点9: <span
+                                                class="ac">答案正确</span> 4324KB 30MS <br>测试点10: <span
+                                                class="ac">答案正确</span> 4332KB 30MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">175 Bytes</td>
+                            <td align="center">2022-08-07 08:48:25</td>
+                        </tr>
+                        <tr bgcolor="#F0F0F0" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499808</td>
+                            <td align="center"><a href="problem_show.php?pid=1086">1086</a></td>
+                            <td onclick="hide('499808')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499808" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4188KB 32MS <br>测试点2: <span class="ac">答案正确</span> 4192KB 31MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4180KB 30MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4180KB 30MS <br>测试点5: <span
+                                                class="ac">答案正确</span> 4184KB 30MS <br>测试点6: <span
+                                                class="ac">答案正确</span> 4188KB 29MS <br>测试点7: <span
+                                                class="ac">答案正确</span> 4180KB 30MS <br>测试点8: <span
+                                                class="ac">答案正确</span> 4196KB 30MS <br>测试点9: <span
+                                                class="ac">答案正确</span> 4192KB 30MS <br>测试点10: <span
+                                                class="ac">答案正确</span> 4192KB 30MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">176 Bytes</td>
+                            <td align="center">2022-08-07 08:45:25</td>
+                        </tr>
+                        <tr bgcolor="#FCFCFC" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499807</td>
+                            <td align="center"><a href="problem_show.php?pid=1085">1085</a></td>
+                            <td onclick="hide('499807')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499807" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4172KB 25MS <br>测试点2: <span class="ac">答案正确</span> 4172KB 30MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4176KB 30MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4184KB 30MS <br>测试点5: <span
+                                                class="ac">答案正确</span> 4180KB 30MS <br>测试点6: <span
+                                                class="ac">答案正确</span> 4172KB 50MS <br>测试点7: <span
+                                                class="ac">答案正确</span> 4172KB 31MS <br>测试点8: <span
+                                                class="ac">答案正确</span> 4172KB 31MS <br>测试点9: <span
+                                                class="ac">答案正确</span> 4176KB 30MS <br>测试点10: <span
+                                                class="ac">答案正确</span> 4172KB 30MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">146 Bytes</td>
+                            <td align="center">2022-08-07 08:40:57</td>
+                        </tr>
+                        <tr bgcolor="#F0F0F0" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499302</td>
+                            <td align="center"><a href="problem_show.php?pid=1084">1084</a></td>
+                            <td onclick="hide('499302')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499302" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4180KB 25MS <br>测试点2: <span class="ac">答案正确</span> 4176KB 33MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4184KB 30MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4168KB 31MS <br>测试点5: <span
+                                                class="ac">答案正确</span> 4180KB 31MS <br>测试点6: <span
+                                                class="ac">答案正确</span> 4168KB 31MS <br>测试点7: <span
+                                                class="ac">答案正确</span> 4172KB 30MS <br>测试点8: <span
+                                                class="ac">答案正确</span> 4180KB 30MS <br>测试点9: <span
+                                                class="ac">答案正确</span> 4176KB 31MS <br>测试点10: <span
+                                                class="ac">答案正确</span> 4176KB 30MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">179 Bytes</td>
+                            <td align="center">2022-08-06 21:48:11</td>
+                        </tr>
+                        <tr bgcolor="#FCFCFC" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499261</td>
+                            <td align="center"><a href="problem_show.php?pid=1083">1083</a></td>
+                            <td onclick="hide('499261')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499261" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4196KB 36MS <br>测试点2: <span class="ac">答案正确</span> 4196KB 32MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4192KB 32MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4196KB 32MS <br>测试点5: <span
+                                                class="ac">答案正确</span> 4184KB 32MS <br>测试点6: <span
+                                                class="ac">答案正确</span> 4188KB 30MS <br>测试点7: <span
+                                                class="ac">答案正确</span> 4188KB 30MS <br>测试点8: <span
+                                                class="ac">答案正确</span> 4192KB 30MS <br>测试点9: <span
+                                                class="ac">答案正确</span> 4188KB 31MS <br>测试点10: <span
+                                                class="ac">答案正确</span> 4196KB 31MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">184 Bytes</td>
+                            <td align="center">2022-08-06 21:37:11</td>
+                        </tr>
+                        <tr bgcolor="#F0F0F0" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499257</td>
+                            <td align="center"><a href="problem_show.php?pid=1082">1082</a></td>
+                            <td onclick="hide('499257')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499257" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4188KB 23MS <br>测试点2: <span class="ac">答案正确</span> 4192KB 30MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4184KB 29MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4188KB 29MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">167 Bytes</td>
+                            <td align="center">2022-08-06 21:36:16</td>
+                        </tr>
+                        <tr bgcolor="#FCFCFC" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499228</td>
+                            <td align="center"><a href="problem_show.php?pid=1081">1081</a></td>
+                            <td onclick="hide('499228')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499228" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4152KB 30MS <br>测试点2: <span class="ac">答案正确</span> 4164KB 29MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4152KB 29MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4164KB 29MS <br>测试点5: <span
+                                                class="ac">答案正确</span> 4160KB 30MS <br>测试点6: <span
+                                                class="ac">答案正确</span> 4156KB 29MS <br>测试点7: <span
+                                                class="ac">答案正确</span> 4164KB 29MS <br>测试点8: <span
+                                                class="ac">答案正确</span> 4152KB 29MS <br>测试点9: <span
+                                                class="ac">答案正确</span> 4164KB 29MS <br>测试点10: <span
+                                                class="ac">答案正确</span> 4164KB 29MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">66 Bytes</td>
+                            <td align="center">2022-08-06 21:28:53</td>
+                        </tr>
+                        <tr bgcolor="#F0F0F0" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499089</td>
+                            <td align="center"><a href="problem_show.php?pid=1080">1080</a></td>
+                            <td onclick="hide('499089')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499089" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4172KB 32MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">105 Bytes</td>
+                            <td align="center">2022-08-06 20:51:05</td>
+                        </tr>
+                        <tr bgcolor="#FCFCFC" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499046</td>
+                            <td align="center"><a href="problem_show.php?pid=1079">1079</a></td>
+                            <td onclick="hide('499046')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499046" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4156KB 32MS <br>测试点2: <span class="ac">答案正确</span> 4156KB 30MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4160KB 29MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4156KB 29MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">64 Bytes</td>
+                            <td align="center">2022-08-06 20:38:15</td>
+                        </tr>
+                        <tr bgcolor="#F0F0F0" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>499007</td>
+                            <td align="center"><a href="problem_show.php?pid=1078">1078</a></td>
+                            <td onclick="hide('499007')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="499007" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4196KB 32MS <br>测试点2: <span class="ac">答案正确</span> 4200KB 29MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4240KB 116MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4268KB 68MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">276 Bytes</td>
+                            <td align="center">2022-08-06 20:26:16</td>
+                        </tr>
+                        <tr bgcolor="#FCFCFC" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>498986</td>
+                            <td align="center"><a href="problem_show.php?pid=1077">1077</a></td>
+                            <td onclick="hide('498986')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="498986" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4176KB 30MS <br>测试点2: <span class="ac">答案正确</span> 4188KB 30MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4188KB 29MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4188KB 64MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">186 Bytes</td>
+                            <td align="center">2022-08-06 20:17:16</td>
+                        </tr>
+                        <tr bgcolor="#F0F0F0" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>498450</td>
+                            <td align="center"><a href="problem_show.php?pid=1076">1076</a></td>
+                            <td onclick="hide('498450')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="498450" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4144KB 24MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">29 Bytes</td>
+                            <td align="center">2022-08-06 18:02:29</td>
+                        </tr>
+                        <tr bgcolor="#FCFCFC" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>498419</td>
+                            <td align="center"><a href="problem_show.php?pid=1075">1075</a></td>
+                            <td onclick="hide('498419')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="498419" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4164KB 23MS <br>测试点2: <span class="ac">答案正确</span> 4164KB 29MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4236KB 29MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4260KB 29MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">79 Bytes</td>
+                            <td align="center">2022-08-06 17:52:35</td>
+                        </tr>
+                        <tr bgcolor="#F0F0F0" style="line-height: 27px;height: 27px;">
+                            <td align="center"><a href="userinfo.php?name=linzhiyi01">linzhiyi01</a></td>
+                            <td>498260</td>
+                            <td align="center"><a href="problem_show.php?pid=1074">1074</a></td>
+                            <td onclick="hide('498260')" align="center"><strong><span class="ac">
+                                        <font size="2">通过 </font>
+                                    </span>
+                                    <font size="2"> 100分</font>
+                                </strong>
+                                <font size="2">
+                                    <div id="498260" style="display:none"><strong>测试点1: <span class="ac">答案正确</span>
+                                            4192KB 25MS <br>测试点2: <span class="ac">答案正确</span> 4192KB 30MS <br>测试点3:
+                                            <span class="ac">答案正确</span> 4184KB 29MS <br>测试点4: <span
+                                                class="ac">答案正确</span> 4212KB 30MS <br></strong></div>
+                                </font>
+                            </td>
+                            <td align="center">Python</td>
+                            <td align="center">165 Bytes</td>
+                            <td align="center">2022-08-06 17:24:47</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+            <hr>
+            <center>
+                <p>
+                    <font size="2">
+                        本题库与《信息技术学考Python一本通》配套，版权及相关事宜请与本书作者联系，本网站不作解答。<br>本网站属公益、非盈利性质，不涉及与书相关的商业活动，后期可能适当收取费用以支持网站的运行维护。<br>目前因个人编写水平有限，网站维护、网站安全方面及部分功能的开发尚不成熟，如遇疑问，请通过版主信箱联系。<br>版主信箱：ybt_mail@126.com<br>
+                    </font>
+                </p>
+            </center>
+        </center>
+    </center>
+</body>
+
+</html>

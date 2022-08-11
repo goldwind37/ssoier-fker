@@ -1,0 +1,5 @@
+p=input()
+p=p.split()
+a,b,c=map(float,p)
+z=max(a,b,c)
+print(z)
